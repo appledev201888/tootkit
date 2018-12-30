@@ -1,0 +1,6 @@
+framework module CXYToolKits {
+  umbrella header "CXYToolKits.h"
+
+  export *
+  module * { export * }
+}
