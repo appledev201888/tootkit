@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "tootkit"
-  s.version      = "0.0.2"
-  s.summary      = "A short description of tootkit."
+  s.version      = "0.0.4"
+  s.summary      = "我的自定义库，目前是测试版，里面啥都没有！"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Classes/**"
-  #s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "Resources/*"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -119,6 +119,7 @@ Pod::Spec.new do |s|
 
 s.framework     = "UIKit", "Foundation"
   # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.vendored_frameworks = 'CXYToolKits.framework'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -130,7 +131,7 @@ s.framework     = "UIKit", "Foundation"
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
