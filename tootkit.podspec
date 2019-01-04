@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "tootkit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "我的自定义库，目前是测试版，里面啥都没有！"
 
   # This description is used to generate tags and improve search results.
