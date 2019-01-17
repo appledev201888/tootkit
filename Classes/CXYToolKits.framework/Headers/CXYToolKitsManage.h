@@ -6,11 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXYToolKitsManage : NSObject
 
-+ (CXYToolKitsManage *)sharedManager;
-
-- (void)CXYToolKitsbegin:(UIView *)view;
-
-- (void)CXYToolKitsend:(UIView *)view;
++ (void)CXYToolKitsManage:(void(^)(NSString *temp))block;
 
 @end
 
